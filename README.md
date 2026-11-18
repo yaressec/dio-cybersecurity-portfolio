@@ -15,6 +15,7 @@
 |---|---------|------|-------|------|
 | 01 | **Medusa + Kali: força bruta em ambiente controlado** | Brute force FTP, DVWA e SMB, enumeração e password spraying | Medusa, Nmap, WSL Kali, Metasploitable 2 | [Ver repo](https://github.com/yaressec/dio-medusa-bruteforce-lab) |
 | 02 | **Simulando malwares em Python** | Ransomware (Fernet) e keylogger (pynput/smtplib) com foco em defesa | Python, Cryptography, pynput, unittest | [Ver repo](https://github.com/yaressec/dio-malware-simulado-python) |
+| 03 | **DIO Agent — especialização em AppSec** | Skill de análise de vulnerabilidades: contexto, risco e correção | Markdown, AGENTS.md, Hermes, sqlite3 | [Ver repo](https://github.com/yaressec/dio-agent-appsec) |
 
 ---
 
@@ -52,11 +53,27 @@
 
 ---
 
+## 03️⃣ DIO Agent — Especialização em AppSec
+
+🔗 **[github.com/yaressec/dio-agent-appsec](https://github.com/yaressec/dio-agent-appsec)**
+
+**O que foi feito**
+- Especializei o DIO Agent com uma skill de **análise de vulnerabilidades** (SKILL.md + README), conhecimento em `agent/knowledge/security-basics.md`, trecho novo na persona e registro no `AGENTS.md`.
+- O agente passou a **perguntar contexto antes de agir**, classificar vulnerabilidade/ameaça/risco e usar formato fixo com **impacto, probabilidade e severidade**.
+- Validei com um `app.py` vulnerável (SQLi/CWE-89) e sua versão corrigida, com evidências dialogadas e prints.
+- Melhoria extra: Regra 0 de autorização + formato padronizado para comparar casos.
+
+**Competências:** AppSec, avaliação de risco, engenharia de prompt com arquivos, documentação técnica, ética em testes.
+
+![Análise de vulnerabilidade](https://raw.githubusercontent.com/yaressec/dio-agent-appsec/master/images/02_analise.png)
+
+---
+
 ## 🧠 Competências gerais demonstradas
 
 - **Ataque & defesa:** compreensão de mecanismos ofensivos para desenhar controles preventivos e detectivos.
 - **Laboratório:** montagem e troubleshooting de redes no VirtualBox/WSL (NAT, host-only, bridged).
-- **Ferramentas:** Medusa, Nmap/NSE, Python (`cryptography`, `pynput`, `smtplib`, `unittest`).
+- **Ferramentas:** Medusa, Nmap/NSE, Python (`cryptography`, `pynput`, `smtplib`, `unittest`), harness de agentes (AGENTS.md/skills).
 - **Documentação:** READMEs estruturados, comandos reproduzíveis, evidências e decisões justificadas.
 - **Segurança responsável:** uso exclusivo em ambientes autorizados; limites explícitos no código.
 
